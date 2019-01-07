@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: db_doc_util
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: dev_user
+    password: zjly@2015
+    url: jdbc:mysql://192.168.10.246:3306/greenlife?characterEncoding=utf-8&useSSL=false
+    name: greenlife
+columns:
+  mapping: {columnName: 列名,columnType: 数据类型,isNullable: 允许为空,columnKey: 是否主键,columnDefault: 默认值,columnComment: 备注}
+mybatis:
+  mapper-locations: classpath:mapperxml/*.xml
